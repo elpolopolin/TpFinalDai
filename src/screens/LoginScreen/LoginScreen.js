@@ -45,7 +45,7 @@ export default function LoginScreen({ navigation }) {
         keyboardShouldPersistTaps="always">
         <Image
           style={styles.logo}
-          source={require('../../logo.jpg')}
+          /* source={require('../../logo.jpg')} */
         />
         <TextInput
           style={styles.input}
