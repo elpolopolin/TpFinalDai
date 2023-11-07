@@ -1,10 +1,9 @@
 import { initializeApp  } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { API_KEY} from '@env'
 
 const firebaseConfig = {
-    apiKey: API_KEY,
+    apiKey: "AIzaSyBHyjHdV1rSgXWI6v4tcqPmI-wizuAX7Xc",
     authDomain: "dai-test-firebase.firebaseapp.com",
     projectId: "dai-test-firebase",
     storageBucket: "dai-test-firebase.appspot.com",
