@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import { LoginScreen, HomeScreen, RegistrationScreen, ConfigScreen, MesageScreen } from './src/screens';
+import { LoginScreen, HomeScreen, RegistrationScreen, ConfigScreen, MesageScreen, MultimediaScreen } from './src/screens';
 import { decode, encode } from 'base-64';
 import { onAuthStateChanged } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
@@ -74,6 +74,7 @@ export default function App() {
           <Tab.Screen name="Home" component={HomeScreen} initialParams={{ userData: user, reloadUser: reloadUser }} />
           <Tab.Screen name="Config" component={ConfigScreen} initialParams={{ userData: user, reloadUser: reloadUser }}/>
           <Tab.Screen name="Mesages" component={MesageScreen} initialParams={{ userData: user, reloadUser: reloadUser }}/>
+          <Tab.Screen name="Multimedia" component={MultimediaScreen} />
         </Tab.Navigator>
       ) : (
         <Stack.Navigator>

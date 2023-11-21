@@ -7,3 +7,5 @@ export { default as RegistrationScreen } from './RegistrationScreen/Registration
 export { default as ConfigScreen } from './ConfigScreen/ConfigScreen'
 
 export { default as MesageScreen } from './MesageScreen/MesageScreen'
+
+export { default as MultimediaScreen } from './multimediaScreen/MultimediaScreen'
